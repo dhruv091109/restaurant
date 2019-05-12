@@ -24,11 +24,11 @@
             ],
             "styles": [
               "src/styles.css",
-              "node_modules/bootstrap/dist/css/bootstrap.css"
+              "node_modules/@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.min.css",
+              "node_modules/@angular/cdk/overlay-prebuilt.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": [
-              "node_modules/bootstrap/dist/js/bootstrap.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
