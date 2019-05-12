@@ -8,13 +8,18 @@ import {NglModule, NGL_ICON_CONFIG, NglIconConfig} from 'ng-lightning';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
-import { RegisterComponent } from './register/register.component';
+import { RegisterComponent } from './components/register/register.component';
+import { HomeComponent } from './components/home/home.component';
+import { AppRoutingModule } from './app-routing.module';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -22,15 +27,19 @@ import { RegisterComponent } from './register/register.component';
     MatButtonModule,
     MatCheckboxModule,
     NgbModule,
-    NglModule
+    NglModule,
+    AppRoutingModule,
+    CommonModule,
+    AppRoutingModule
   ],
+
   providers: [
     {
       provide: NGL_ICON_CONFIG, 
       useValue: <NglIconConfig>{ svgPath: '/my/path' } 
     },
   ],
-  
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }
