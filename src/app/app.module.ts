@@ -7,10 +7,14 @@ import {NglModule, NGL_ICON_CONFIG, NglIconConfig} from 'ng-lightning';
 
 
 import { AppComponent } from './app.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
