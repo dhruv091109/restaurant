@@ -1,10 +1,17 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <!-- nav -->
-<nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
     <a class="navbar-brand" href="#">Restaurent Order Soft</a>
-    <div class="navbar-nav ml-auto">
-        <a class="nav-item nav-link" routerLink="/">Home</a>
-        <a class="nav-item nav-link" (click)="logout()">Logout</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+        aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarToggler">
+        <div class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <a class="text-white nav-item nav-link mr-sm-2" routerLink="/">Home</a>
+            <a class="text-white nav-item nav-link my-2 my-sm-0" (click)="logout()">Logout</a>
+        </div>
     </div>
 </nav>
 
