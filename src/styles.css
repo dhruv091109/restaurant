@@ -1,5 +1,65 @@
 /* You can add global styles to this file, and also import other style files */
-@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+/* @import '@angular/material/prebuilt-themes/deeppurple-amber.css'; */
+
+@import '../node_modules/@angular/material/prebuilt-themes/indigo-pink.css';
+
+
 html {
     background-color: white !important;
 }
+
+
+.jumbotron {
+
+    margin: auto;
+    margin-top: 10vh;
+    width: 40vw;
+
+}
+.row-box {
+    width:100%;
+    text-align: center;
+}
+
+.row-box-same-line {
+    display: inline-block;
+}
+
+
+.fill-remaining-space {
+    /* This fills the remaining space, by using flexbox. 
+       Every toolbar row uses a flexbox row layout. */
+    flex: 1 1 auto;
+  }
+  
+  .container {
+    padding: 10px;
+  }
+  
+  .form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .form-element {
+    padding: 5px 0px 25px 2px;
+    width: 100%;
+  }
+  
+  .button {
+    width: 150px;
+  }
+
+  .button-gray {
+      background-color: darkgray;
+  }
+  .button-lightskyblue {
+      background-color: lightskyblue;
+  }
+  .button-light-gray {
+      background-color: gray;
+  }
+  .button-gainsboro {
+      background-color: gainsboro;
+  }
